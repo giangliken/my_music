@@ -1,0 +1,166 @@
+/* Body Styles */
+body {
+     font-family: 'Roboto', sans-serif;
+     background-color: #ffffff; /* Nền trắng */
+     color: #000000; /* Màu chữ đen để tương phản với nền trắng */
+     margin: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+ }
+ 
+ /* Main Container */
+ .main-container {
+     display: flex;
+     width: 800px;
+     border-radius: 8px;
+     overflow: hidden;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Giảm độ tối của bóng */
+ }
+ 
+ /* Sidebar */
+ .sidebar {
+     width: 250px;
+     background-color: #f0f0f0; /* Màu nền sidebar sáng hơn */
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+ }
+ 
+ .sidebar h1 {
+     font-size: 24px;
+     margin-bottom: 20px;
+     color: #333333; /* Màu chữ tối hơn */
+ }
+ 
+ .sidebar ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     width: 100%;
+ }
+ 
+ .sidebar li {
+     padding: 10px;
+     cursor: pointer;
+     border-bottom: 1px solid #dcdcdc; /* Sử dụng màu xám nhạt hơn */
+     color: #666666; /* Màu chữ xám */
+     transition: background-color 0.3s;
+ }
+ 
+ .sidebar li:hover {
+     background-color: #e0e0e0; /* Hiệu ứng hover sáng hơn */
+     color: #000;
+ }
+ 
+ .sidebar li.active {
+     background-color: #cfcfcf; /* Màu nền active sáng hơn */
+     color: #000000; /* Màu xanh đặc trưng của Spotify */
+     font-weight: bold;
+ }
+ 
+ /* Player */
+ .player {
+     width: 550px;
+     background-color: #ffffff; /* Nền trắng cho player */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Giảm độ tối của bóng */
+ }
+ 
+ .now-playing {
+     display: flex;
+     align-items: center;
+     margin-bottom: 20px;
+     width: 100%;
+ }
+ 
+ .now-playing img {
+     width: 100px;
+     height: 100px;
+     border-radius: 8px;
+     margin-right: 20px;
+     object-fit: cover;
+ }
+ 
+ .song-info {
+     flex-grow: 1;
+ }
+ 
+ .song-info h2 {
+     margin: 0;
+     font-size: 20px;
+     color: #000000; /* Màu chữ đen */
+     font-weight: bold;
+ }
+ 
+ .song-info p {
+     margin: 5px 0 0;
+     font-size: 14px;
+     color: #666666; /* Màu chữ xám */
+ }
+ 
+ .controls {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     margin-top: 20px;
+ }
+ 
+ .btn {
+     background-color: transparent;
+     color: hsl(0, 0%, 100%); /* Màu nút đen */
+     border: 2px solid hsl(0, 0%, 100%); /* Đường viền nút đen */
+     padding: 10px;
+     border-radius: 50%;
+     font-size: 20px;
+     cursor: pointer;
+     outline: none;
+     transition: background-color 0.3s, transform 0.2s;
+ }
+ 
+ .control-btn {
+     margin: 0 15px;
+ }
+ 
+ .play-btn {
+     background-color: #1d4cb900; /* Màu xanh của Spotify */
+     color: #ffffff;
+     padding: 12px;
+     font-size: 22px;
+     margin: 0 20px;
+     border: none; /* Xóa bỏ đường viền */
+ }
+ 
+ .btn:hover {
+     background-color: rgba(0, 0, 0, 0.1); /* Hiệu ứng hover sáng hơn */
+     transform: scale(1.1);
+ }
+ 
+ .play-btn:hover {
+     background-color: #cbc2c2; /* Màu hover của nút Play */
+ }
+ 
+ audio {
+     width: 100%;
+     margin-top: 20px;
+     outline: none;
+ }
+ 
+ footer {
+     text-align: center;
+     padding: 10px;
+     position: center;
+     bottom: 0;
+     width: 100%;
+     font-size: 14px;
+     color: #666666; /* Màu chữ xám để phù hợp với giao diện tổng thể */
+ }
+ 
+ 
